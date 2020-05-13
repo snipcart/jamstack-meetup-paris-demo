@@ -23,6 +23,20 @@ html, body, .main {
     align-items: center;
 }
 
+.view-cart {
+    display: flex;
+    align-items: center;
+}
+
+.view-cart__icon {
+    width: 24px;
+    margin-right: 8px;
+}
+
+.view-cart__text {
+    line-height: 24px;
+}
+
 .logo {
     width: 50%;
 }
@@ -139,7 +153,7 @@ h1 a:hover, h2 a:hover, .title a:hover, .content-list a:hover, .item-grid .item:
     display: block;
 }
 
-.snipcart-add-item {
+.buy-button {
     border: 0;
     background-color: #E0E3F5;
     font-size: 1em;
@@ -150,6 +164,6 @@ h1 a:hover, h2 a:hover, .title a:hover, .content-list a:hover, .item-grid .item:
     cursor: pointer;
 }
 
-.snipcart-add-item:hover {
+.buy-button:hover {
     border: 1px solid black;
 }

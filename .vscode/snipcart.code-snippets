@@ -18,7 +18,7 @@
     "Add Snipcart buy button": {
         "prefix": "buyButton",
         "body": [
-            "<button class=\"snipcart-add-item\"",
+            "<button class=\"buy-button snipcart-add-item\"",
             "    data-item-id=\"11ty-{{page.fileSlug}}\"",
             "    data-item-name=\"{{name}}\"",
             "    data-item-price=\"{{price}}\"",

@@ -20,9 +20,10 @@ title:
                     <a href="/">Coiffure on-premise</a>
                 <% if(page.url == '/'){ %></h1><% } else { %></p><% } %>
             </div>
-            <div class="view-cart">
-                Voir le panier
-            </div>
+            <a href="#" class="view-cart">
+                <img class="view-cart__icon" src="/assets/cart.svg" />
+                <span class="view-cart__text">Voir le panier</span>
+            </a>
         </header>
         <section class="content">
             <%- content %>
