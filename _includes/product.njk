@@ -12,28 +12,9 @@ layout: default.ejs
         </p>
 
         <p>
-            <button class="snipcart-add-item"
-                data-item-id="11ty-{{page.fileSlug}}"
-                data-item-name="{{name}}"
-                data-item-price="{{price}}"
-                data-item-image="{{image}}"
-                data-item-url="{{page.url}}">
+            <button>
                 Acheter pour {{price}}$
             </button>
         </p>
     </div>
-</section>
-
-<section>
-        <h2>Code du bouton d'achat</h2>
-        {% highlight "markup" %}
-<button class="snipcart-add-item"
-        data-item-id="11ty-{{page.fileSlug}}"
-        data-item-name="{{name}}"
-        data-item-price="{{price}}"
-        data-item-image="{{image}}"
-        data-item-url="{{page.url}}">
-    Buy for {{price}}$
-</button>
-        {% endhighlight %}
 </section>
