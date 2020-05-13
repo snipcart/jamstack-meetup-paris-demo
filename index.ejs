@@ -1,0 +1,26 @@
+---
+layout: default.ejs
+permalink: /
+---
+<section class="top">
+    <h2>Salut Jamstack Paris!</h2>
+    <p>
+        Avec toutes ces mesures de confinement, certains d'entre nous devront apprendre à se couper les cheveux eux-mêmes, voici quelques outils afin de pouvoir vous entretenir du mieux
+        que vous le pourrez.
+    </p>
+</section>
+
+<div class="list-group">
+    <section>
+        <%- include('/item-list', {
+            title: 'Nos produits',
+            list: collections.products,
+            url: '/products/',
+            map: (product) => ({
+                image: product.data.image,
+                url: product.url,
+                label: product.data.name,
+            }),
+        }) %>
+    </section>
+</div>

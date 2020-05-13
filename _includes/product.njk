@@ -1,0 +1,39 @@
+---
+layout: default.ejs
+---
+<section class="top">
+    <h1>{{name}}</h1>
+</section>
+<section class="list-group">
+    <img src="{{image}}" alt="{{name}}" />
+    <div>
+        <p>
+            {{ content | safe }}
+        </p>
+
+        <p>
+            <button class="snipcart-add-item"
+                data-item-id="11ty-{{page.fileSlug}}"
+                data-item-name="{{name}}"
+                data-item-price="{{price}}"
+                data-item-image="{{config.siteUrl}}{{image}}"
+                data-item-url="{{config.siteUrl}}/products.json">
+                Acheter pour {{price}}$
+            </button>
+        </p>
+    </div>
+</section>
+
+<section>
+        <h2>Code du bouton d'achat</h2>
+        {% highlight "markup" %}
+<button class="snipcart-add-item"
+        data-item-id="11ty-{{page.fileSlug}}"
+        data-item-name="{{name}}"
+        data-item-price="{{price}}"
+        data-item-image="{{config.siteUrl}}{{image}}"
+        data-item-url="{{config.siteUrl}}/products.json">
+    Buy for {{price}}$
+</button>
+        {% endhighlight %}
+</section>
