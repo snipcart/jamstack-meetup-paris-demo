@@ -17,6 +17,15 @@ html, body, .main {
     padding: 1em;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 50%;
+}
 .main > header, .main > footer {
     flex: 0;
     background-color: #E0E3F5;

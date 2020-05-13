@@ -14,10 +14,15 @@ title:
 </head>
 <body>
     <div class="main">
-        <header>
-            <% if(page.url == '/'){ %><h1 class="title"><% } else { %><p class="title"><% } %>
-                <a href="/">Coiffure on-premise</a>
-            <% if(page.url == '/'){ %></h1><% } else { %></p><% } %>
+        <header class="header">
+            <div class="logo">
+                <% if(page.url == '/'){ %><h1 class="title"><% } else { %><p class="title"><% } %>
+                    <a href="/">Coiffure on-premise</a>
+                <% if(page.url == '/'){ %></h1><% } else { %></p><% } %>
+            </div>
+            <div class="view-cart">
+                Voir le panier
+            </div>
         </header>
         <section class="content">
             <%- content %>
