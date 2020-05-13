@@ -16,8 +16,8 @@ layout: default.ejs
                 data-item-id="11ty-{{page.fileSlug}}"
                 data-item-name="{{name}}"
                 data-item-price="{{price}}"
-                data-item-image="{{config.siteUrl}}{{image}}"
-                data-item-url="{{config.siteUrl}}/products.json">
+                data-item-image="{{image}}"
+                data-item-url="{{page.url}}">
                 Acheter pour {{price}}$
             </button>
         </p>
@@ -31,8 +31,8 @@ layout: default.ejs
         data-item-id="11ty-{{page.fileSlug}}"
         data-item-name="{{name}}"
         data-item-price="{{price}}"
-        data-item-image="{{config.siteUrl}}{{image}}"
-        data-item-url="{{config.siteUrl}}/products.json">
+        data-item-image="{{image}}"
+        data-item-url="{{page.url}}">
     Buy for {{price}}$
 </button>
         {% endhighlight %}
