@@ -12,7 +12,12 @@ layout: default.ejs
         </p>
 
         <p>
-            <button class="buy-button">
+            <button class="buy-button snipcart-add-item"
+                data-item-id="11ty-{{page.fileSlug}}"
+                data-item-name="{{name}}"
+                data-item-price="{{price}}"
+                data-item-image="{{image}}"
+                data-item-url="{{page.url}}">
                 Acheter pour {{price}}$
             </button>
         </p>

@@ -2,14 +2,14 @@
 title:
 ---
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><% if(title){ %><%= title %> – <% } %>A Snipcart and 11ty demo</title>
     <link rel="stylesheet" type="text/css" href="/assets/site.css" />
     <link rel="icon" href="/assets/logo-black.png" />
-
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.css" />
     <link rel="stylesheet" type="text/css" href="/assets/prism.css" />
 </head>
 <body>
@@ -20,7 +20,7 @@ title:
                     <a href="/">Coiffure on-premise</a>
                 <% if(page.url == '/'){ %></h1><% } else { %></p><% } %>
             </div>
-            <a href="#" class="view-cart">
+            <a href="#" class="snipcart-checkout view-cart">
                 <img class="view-cart__icon" src="/assets/cart.svg" />
                 <span class="view-cart__text">Voir le panier</span>
             </a>
@@ -34,5 +34,8 @@ title:
             </p>
         </footer>
     </div>
+
+    <div hidden id="snipcart" data-api-key="MjZmNTA1MzMtZGU5OC00MDA5LTk0MDktNDIwMGRiMjc4OTA2NjM3MjQ5NzgzMjQzNzQxMDM0"></div>
+    <script src="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.js"></script>
 </body>
 </html>
